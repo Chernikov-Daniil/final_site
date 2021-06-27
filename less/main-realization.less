@@ -1,0 +1,64 @@
+@import url(variable.less);
+@import url(mixin.less);
+
+.realization {
+    width: 100%;
+    padding: 83px 0 0 0;
+    box-sizing: border-box;
+    background-color: #fbfaf8;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &-tittle {
+        width: 100%;
+        text-align: center;
+        .text(raleway, 600, 30px);
+        line-height: 1.2;
+        color: #555555;
+        margin: 0 0 24px 0;
+    }
+
+    &-text {
+        width: 757px;
+        text-align: center;
+        .text(Montserrat, 300, 16px);
+        line-height: 28px;
+        color: #8c8c8c;
+        margin: 0 0 40px 0;
+    }
+
+    &-box {
+        width: 100%;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        &-img-left {
+            width: 770px;
+            height: 400px;
+            position: relative;
+            top: 0;
+            left: 540px;
+        }
+
+        &-img-center {
+            width: 770px;
+            height: 482px;
+            position: relative;
+            top: 0;
+            z-index: 3;
+        }
+
+        &-img-right {
+            width: 770px;
+            height: 400px;
+            position: relative;
+            top: 0;
+            right: 540px;
+        }
+
+    }
+
+}

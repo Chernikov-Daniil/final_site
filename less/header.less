@@ -41,7 +41,7 @@
         }
 
         &-menu {
-            .text (Montserrat, 300);
+            .text (montserrat, 300);
             line-height: 1.2;
             margin: 0 63px 0 0;
 
@@ -118,7 +118,8 @@
     flex-wrap: wrap;
 
     &-switchleft {
-        width: 40px;
+        max-width: 40px;
+        width: 100%;
         height: 73px;
         opacity: 0.5;
         border: 0;
@@ -160,22 +161,23 @@
         }
 
         &-txt {
-            .text(Montserrat, 300, 16px);
+            .text(montserrat, 300, 16px);
             line-height: 24px;
             color: #ffffff;
             margin: 0 0 52px 0;
         }
 
         &-btn {
-            width: 170px;
+            max-width: 170px;
+            width: 100%;
             height: 53px;
             background-color: #998675;
-            box-shadow: inset 0px -3px 0px 0px #736357;
             border-radius: 3px;
             .text(realeway, 800);
             line-height: 23px;
             text-transform: uppercase;
             color: #ffffff;
+            border: 0;
 
             &:hover {
                 color: darken(#998675, 80%);
@@ -185,12 +187,14 @@
             &:active {
                 color: #ffffff;
                 background-color: #998675;
+                border: 0;
             }
         }
     }
 
     &-switchright {
-        width: 40px;
+        max-width: 40px;
+        width: 100%;
         height: 73px;
         opacity: 0.5;
         border: 0;
@@ -227,7 +231,7 @@
             height: 11px;
             background-color: #ffffff;
             border-radius: 50%;
-            border: 2px solid transparent;
+            border: 1px solid transparent;
             margin: 0 10px 0 0;
 
             &:last-child {
@@ -236,8 +240,12 @@
 
             &:hover {
                 background-color: rgba(255, 255, 255, 0.0);
-                border: 2px solid #d3c1ad;
+                border: 1px solid #d3c1ad;
                 transform: scale(1.2);
+            }
+
+            &:active {
+                background-color: #ffffff;
             }
         }
     }

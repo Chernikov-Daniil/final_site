@@ -1,13 +1,15 @@
+//out:false
+
 @import url(mixin.less);
 @import url(variable.less);
 
 .footer-top {
 	max-width: @width;
-    width: 100%;
-    background-color: #191919;
-    padding: 80px 0;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+	width: 100%;
+	background-color: #191919;
+	padding: 80px 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 
@@ -18,27 +20,27 @@
 		align-items: flex-start;
 
 		&-logo {
-            text-decoration: none;
-            .text(raleway, 400, 34px);
-            line-height: 1.2;
-            letter-spacing: -0.04em;
-            color: #ffffff;
-            display: flex;
-            align-items: center;
-            margin: 0 0 29px 0;
+			text-decoration: none;
+			.text(raleway, 400, 34px);
+			line-height: 1.2;
+			letter-spacing: -0.04em;
+			color: #ffffff;
+			display: flex;
+			align-items: center;
+			margin: 0 0 29px 0;
 
-            &-icon {
-                fill: currentColor;
-            }
+			&-icon {
+				fill: currentColor;
+			}
 
-            &:hover {
-                color: #c7b299;
-            }
+			&:hover {
+				color: #c7b299;
+			}
 
-            &:active {
-                color: #ffffff;
-            }
-        }
+			&:active {
+				color: #ffffff;
+			}
+		}
 
 		&-excerpt {
 			.text (montserrat, 300);
@@ -51,7 +53,8 @@
 		&-link {
 			.text (montserrat, 400);
 			line-height: 20px;
-			color: #d1d1d1;;
+			color: #d1d1d1;
+			;
 			text-decoration: none;
 			position: relative;
 			padding: 0 14px 0 0;
@@ -82,7 +85,8 @@
 				display: block;
 				position: absolute;
 				border: 6px solid transparent;
-				border-left: 7px solid #c7b299;;
+				border-left: 7px solid #c7b299;
+				;
 				top: 0;
 				right: -9px;
 			}
@@ -118,7 +122,7 @@
 			.text (montserrat);
 			line-height: 20px;
 			color: #555555;
-			
+
 
 			&:last-child {
 				margin: 0;
@@ -198,32 +202,38 @@
 }
 
 .footer-bot {
-    width: 100%;
-    background-color: #111111;
-    padding: 45px 374px 52px 376px;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-	 display: flex;
-	 justify-content: space-between;
-	 flex-wrap: wrap;
+	max-width: @width;
+	width: 100%;
+	background-color: #111111;
+	padding: 45px 0 52px 0;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 
-	 &-list {
-		 margin: 0;
-		 padding: 0;
-		 -moz-box-sizing: border-box;
-		 box-sizing: border-box;
-		 list-style-type: none;
-		 display: flex;
+	&-list {
+		margin: 0;
+		padding: 0;
+		-moz-box-sizing: border-box;
+		box-sizing: border-box;
+		list-style-type: none;
+		display: flex;
+		margin: 0 320px 0 0;
 
-		 &-item {
+		&:last-child {
+			margin: 0;
+		}
+
+		&-item {
 			margin: 0 10px 0 0;
-			 .text (montserrat, 300, 13px);
-			 line-height: 20px;
-			 color: #555555;
-			 position: relative;
-			 padding: 0 10px 0 0;
-			 -moz-box-sizing: border-box;
-			 box-sizing: border-box;
+			.text (montserrat, 300, 13px);
+			line-height: 20px;
+			color: #555555;
+			position: relative;
+			padding: 0 10px 0 0;
+			-moz-box-sizing: border-box;
+			box-sizing: border-box;
 
 			&::after {
 				content: '|';
@@ -234,18 +244,18 @@
 				position: absolute;
 			}
 
-		 	&:last-child {
-			 margin: 0;
+			&:last-child {
+				margin: 0;
 
-			 &::after {
-				 content: none;
-			 }
-		 	}
+				&::after {
+					content: none;
+				}
+			}
 
-			 &-link {
-				 text-decoration: none;
-				 color: #555555;
-			 }
+			&-link {
+				text-decoration: none;
+				color: #555555;
+			}
 
 			&-wax {
 				color: #959595;
@@ -261,7 +271,7 @@
 			}
 
 			&-txt {
-					 color: #959595;
+				color: #959595;
 			}
 
 			&:hover &-link {
@@ -280,5 +290,5 @@
 				color: #959595;
 			}
 		}
-	 }
+	}
 }
